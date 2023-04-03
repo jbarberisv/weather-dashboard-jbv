@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    gap: 2rem;
+}
+
+header {
+    background-image: linear-gradient(blue, rgb(171, 62, 171));
+    color: #ffff;
+    height: 3rem;
+    
+    
+}

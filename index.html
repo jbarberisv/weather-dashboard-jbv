@@ -5,30 +5,46 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Weather Dashboard</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/style.css'>
 
 </head>
 <body>
-    <header>
+    <header class="nav">
         <h1>Weather Dashboard</h1>
 
     </header>
-    <aside>
-    <h2>Search for a city</h2>
-        <form onSubmit=(search) >
-            <input type="text" name="city" placeholder="San Diego">
-            <button type="submit">Search</button>
-        </form>
-    </aside>
-    <main>
-        <div id="city-weather">
+    <div class="main">
+        <aside class="mt-2">
+            <h2>Search for a city</h2>
+                <form  >
+                    <input id="city" type="text" name="city" placeholder="San Diego">
+                    <button type="submit">Search</button>
+                </form>
+            </aside>
+            <main class="mt-2">
+                <div id="city-weather" >
+                    <h2 id="cityName"></h2>
+                    <ul>
+                        <li>
+                            Temp: <span id="temp"></span> F.
+                        </li>
+                        <li>
+                            Wind: <span id="wind"></span> MPH.
+                        </li>
+                        <li>
+                            Humidity: <span id="humidity"></span> %.
+                        </li>
+                    </ul>
 
-        </div>
-        <h2>Forecast</h2>
-        <div>
-
-        </div>
-    </main>
+        
+                </div>
+                <h2>Forecast</h2>
+                <div>
+        
+                </div>
+            </main>
+    </div>
     <script src='./assets/js/script.js'></script>
 </body>
 </html>
